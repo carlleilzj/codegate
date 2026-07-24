@@ -16,12 +16,19 @@ need "package.json"
 need "README.md"
 need "docs/中文说明.md"
 need "scripts/install-local.sh"
+need "hooks/session-start"
+need "hooks/hooks.json"
 
 grep -q 'design-before-code' skills/using-codegate/SKILL.md && pass 'router has design' || fail 'router missing design'
 grep -q 'HARD-GATE' skills/design-before-code/SKILL.md && pass 'design hard gate' || fail 'design hard gate missing'
 grep -q 'HARD-GATE' skills/verify-before-done/SKILL.md && pass 'verify hard gate' || fail 'verify hard gate missing'
 grep -q 'TradeGate' skills/using-codegate/SKILL.md && pass 'explicit non-crypto boundary' || fail 'missing TradeGate boundary note'
 grep -qi '加密' README.md && pass 'README says not crypto' || fail 'README crypto disclaimer weak'
+if CLAUDE_PLUGIN_ROOT="$ROOT" bash hooks/session-start | grep -q CodeGate; then
+  pass 'session-start injects CodeGate'
+else
+  fail 'session-start inject failed'
+fi
 
 if node --input-type=module -e "import {CodeGatePlugin} from './.opencode/plugins/codegate.js'; if (typeof CodeGatePlugin!=='function') process.exit(2)"; then
   pass 'opencode plugin loads'

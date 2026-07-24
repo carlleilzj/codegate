@@ -22,6 +22,9 @@ apply CodeGate routing before free-form implementation.
 
 **No silent coding.** Pick a gate, announce it, follow it.
 
+**用户不需要口头咒语。**  
+会话启动时应已注入本 skill。用户只要正常说「加功能 / 修 bug / 做完了 / 开 PR」，你就必须自动路由到对应闸门——不要等他们写出 `design-before-code` 字样。
+
 You may still answer conceptual questions without gates.  
 You must NOT jump into files/edits for build work while skipping design/plan/test/verify when those gates apply.
 

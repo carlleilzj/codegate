@@ -1,0 +1,15 @@
+{
+  "name": "codegate",
+  "displayName": "CodeGate",
+  "description": "Coding-agent hard gates: design before code, plan before build, test before fix, evidence before done.",
+  "version": "0.1.1",
+  "author": {
+    "name": "carlleilzj",
+    "url": "https://github.com/carlleilzj"
+  },
+  "homepage": "https://github.com/carlleilzj/codegate",
+  "repository": "https://github.com/carlleilzj/codegate",
+  "license": "MIT",
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks-cursor.json"
+}

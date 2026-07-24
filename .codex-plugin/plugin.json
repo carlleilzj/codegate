@@ -1,21 +1,34 @@
 {
   "name": "codegate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Coding-agent hard gates: design before code, plan before build, test before fix, evidence before done.",
-  "author": { "name": "carlleilzj", "url": "https://github.com/carlleilzj" },
+  "author": {
+    "name": "carlleilzj",
+    "url": "https://github.com/carlleilzj"
+  },
   "homepage": "https://github.com/carlleilzj/codegate",
   "repository": "https://github.com/carlleilzj/codegate",
   "license": "MIT",
-  "keywords": ["coding", "tdd", "verification", "planning", "skills"],
+  "keywords": [
+    "coding",
+    "tdd",
+    "verification",
+    "planning",
+    "skills"
+  ],
   "skills": "./skills/",
-  "hooks": {},
+  "hooks": "./hooks/hooks.json",
   "interface": {
     "displayName": "CodeGate",
     "shortDescription": "Hard gates for coding agents before build and before done",
     "longDescription": "CodeGate forces design, planning, failing tests, and verification evidence before implementation claims. Built for Codex and OpenCode.",
     "developerName": "carlleilzj",
     "category": "Developer Tools",
-    "capabilities": ["Interactive", "Read", "Write"],
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
     "defaultPrompt": [
       "帮我加一个功能，先过设计闸",
       "修这个 bug，先写失败测试"
