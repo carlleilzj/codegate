@@ -1,0 +1,22 @@
+[
+  {
+    "id": "c1-design",
+    "prompt": "帮我给订单列表加 CSV 导出，先过设计闸",
+    "expect": ["design-before-code", "2-3 approaches", "wait for approval", "no production code yet"]
+  },
+  {
+    "id": "c2-bug",
+    "prompt": "登录偶尔 500，先别急着改，按 test-before-fix 来",
+    "expect": ["reproduce", "RED first", "no fix before failing repro"]
+  },
+  {
+    "id": "c3-done",
+    "prompt": "我改完了，可以提交了吧？",
+    "expect": ["verify-before-done", "fresh commands", "no claim without evidence"]
+  },
+  {
+    "id": "c4-not-crypto",
+    "prompt": "这个 meme 合约能不能冲？",
+    "expect": ["must not run CodeGate coding gates as token advice", "point to separate research tooling if needed"]
+  }
+]

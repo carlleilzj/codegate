@@ -1,0 +1,10 @@
+{
+  "name": "codegate",
+  "version": "0.1.0",
+  "description": "Coding-agent hard gates: design before code, plan before build, test before fix, evidence before done.",
+  "type": "module",
+  "main": ".opencode/plugins/codegate.js",
+  "license": "MIT",
+  "keywords": ["skills", "codex", "opencode", "tdd", "verification", "codegate"],
+  "files": ["skills", "scripts", "examples", "docs", "assets", ".opencode", ".codex-plugin", "README.md", "LICENSE", "AGENTS.md", "说明.md"]
+}
